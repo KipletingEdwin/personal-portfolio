@@ -77,8 +77,8 @@ export default function Hero() {
               
               {/* Profile Image Node Context Matching */}
               <img 
-                src="https://unsplash.com" 
-                alt="Sajid Yaqub - Hero Visual Profile" 
+                src="https://media.istockphoto.com/id/2226994045/photo/isolated-male-avatar-in-purple-circle.webp?a=1&b=1&s=612x612&w=0&k=20&c=zTAWtyjM3UPzbRxt_eoV1j21oriDlL1DfKl-4fV7K3A=" 
+                alt="Kipleting Edwin - Hero Visual Profile" 
                 className="h-full w-full rounded-full object-cover grayscale brightness-90 contrast-110"
               />
               

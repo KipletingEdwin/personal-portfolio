@@ -19,7 +19,7 @@ export default function About() {
             {/* Image Outer Containment Wrapper matching image dimensions */}
             <div className="relative z-10 overflow-hidden rounded-2xl border border-white/10 bg-brand-card p-2 shadow-2xl transition-transform duration-500 hover:scale-[1.01]">
               <img 
-                src="https://unsplash.com" 
+                src="https://media.istockphoto.com/id/2226994045/photo/isolated-male-avatar-in-purple-circle.webp?a=1&b=1&s=612x612&w=0&k=20&c=zTAWtyjM3UPzbRxt_eoV1j21oriDlL1DfKl-4fV7K3A=" 
                 alt="Sajid Yaqub - About Profile" 
                 className="h-80 w-full max-w-sm rounded-xl object-cover grayscale contrast-115 brightness-95"
               />

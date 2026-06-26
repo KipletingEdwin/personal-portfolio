@@ -10,7 +10,7 @@ export default function Projects() {
       id: 1,
       title: 'MSTM Todo App (2024)',
       description: 'A responsive full-stack task management ecosystem with persistent database structures and real-time live data state sync.',
-      image: 'https://unsplash.com',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtxN1N__a95U1qyLXlHE6KtDBKcuNNwTqWpGQVTPsUnQ&s=10',
       techTags: ['React', 'Node.js', 'Express', 'MongoDB'],
       liveLink: '#',
       githubLink: '#'
@@ -19,7 +19,7 @@ export default function Projects() {
       id: 2,
       title: 'E-Commerce Demo (2025)',
       description: 'A luxury storefront shopping experience incorporating fluid transitions, search filters, state carts, and dynamic checkout handles.',
-      image: 'https://unsplash.com',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqkPuPqCMip3iLp6Zq0cxdgh1BLXQ4mXBUtNLVBV02w&s',
       techTags: ['React', 'Tailwind CSS', 'Redux', 'Stripe'],
       liveLink: '#',
       githubLink: '#'

@@ -24,10 +24,10 @@ export default function Footer() {
           {/* Left Block: Logo System Replica */}
           <div className="flex items-center gap-1.5 text-lg font-bold tracking-tight text-white">
             <span className="bg-linear-to-r from-brand-coral to-brand-neon-blue bg-clip-text text-transparent">
-              MSTM
+              Kipleting
             </span>
             <span className="font-light text-slate-500">
-              TechStudio
+              Edwin
             </span>
           </div>
 
@@ -91,7 +91,7 @@ export default function Footer() {
 
         {/* Bottom Metadata Rights Subtext Row */}
         <div className="mt-8 flex flex-col items-center justify-between gap-4 text-center text-xs font-light text-slate-500 sm:flex-row">
-          <p>© {currentYear} MSTM TechStudio. All rights reserved.</p>
+          <p>© {currentYear} Kipleting Edwin. All rights reserved.</p>
           <p className="flex items-center gap-1">
             Engineered with 
             <span className="text-brand-coral animate-pulse">❤️</span> 
