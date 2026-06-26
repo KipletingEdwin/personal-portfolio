@@ -1,7 +1,7 @@
 
 
 import React, { useState } from 'react';
-import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { Menu, X, ArrowUpRight, Sparkles } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,8 +53,9 @@ export default function Navbar() {
               href="#contact"
               className="inline-flex items-center gap-1 px-5 py-2.5 text-sm font-semibold text-white rounded-full bg-linear-to-r from-brand-coral to-brand-neon-blue shadow-[0_0_15px_rgba(255,65,85,0.2)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(0,210,255,0.4)]"
             >
-              Contact Me
-              <ArrowUpRight size={15} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <Sparkles size={15} />
+              Hire Me
+              {/* <ArrowUpRight size={15} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /> */}
             </a>
           </div>
 

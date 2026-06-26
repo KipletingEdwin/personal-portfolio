@@ -11,21 +11,21 @@ export default function Testimonials() {
       id: 1,
       name: 'Sarah Jenkins',
       role: 'Product Manager at FinTech Corp',
-      quote: 'Sajid perfectly translated our complex Figma structures into a high-performance React application. His use of modular state workflows and clean Tailwind utilities made the codebase incredibly easy for our team to adopt and maintain.',
+      quote: 'Edwin perfectly translated our complex Figma structures into a high-performance React application. His use of modular state workflows and clean Tailwind utilities made the codebase incredibly easy for our team to adopt and maintain.',
       rating: 5,
     },
     {
       id: 2,
       name: 'David Chen',
       role: 'Founder of AgriTech Labs',
-      quote: 'The full-stack database integrations Sajid built for our platform are flawless. He possesses a rare mix of extreme attention to pixel-perfect layouts alongside airtight back-end security infrastructure. Absolute professional.',
+      quote: 'The full-stack database integrations Edwin built for our platform are flawless. He possesses a rare mix of extreme attention to pixel-perfect layouts alongside airtight back-end security infrastructure. Absolute professional.',
       rating: 5,
     },
     {
       id: 3,
       name: 'Elena Rostova',
       role: 'Creative Director at PixelStudio',
-      quote: 'I was blown away by the execution speed and optimization scores of our new e-commerce interface. Sajid transformed custom animations and heavy asset grids into a lightweight, fluid, and conversion-focused web system.',
+      quote: 'I was blown away by the execution speed and optimization scores of our new e-commerce interface. Edwin transformed custom animations and heavy asset grids into a lightweight, fluid, and conversion-focused web system.',
       rating: 5,
     }
   ];
