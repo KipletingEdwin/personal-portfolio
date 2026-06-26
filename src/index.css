@@ -1,0 +1,108 @@
+
+@import "tailwindcss";
+
+@theme {
+  /* Exact color matching from your cyberpunk design image */
+  --color-brand-bg: #030b21;
+  --color-brand-card: #0a122c;
+  --color-brand-neon-blue: #00d2ff;
+  --color-brand-coral: #ff4155;
+  
+  /* Typography Scale Mapping */
+  --font-sans: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+  
+  /* Modern Premium Transition Base */
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom Utilities for Premium Cyberpunk Effects */
+@utility bg-brand-radial-glow {
+  background: radial-gradient(circle at 50% 0%, #200b1d 0%, #030b21 75%);
+}
+
+@utility bg-card-glow {
+  background: linear-gradient(135deg, #160a22 0%, #0a122c 100%);
+}
+
+@utility text-glow-blue {
+  text-shadow: 0 0 12px rgba(0, 210, 255, 0.4);
+}
+
+@utility text-glow-coral {
+  text-shadow: 0 0 12px rgba(255, 65, 85, 0.4);
+}
+
+@utility border-glow-blue {
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.15);
+}
+
+/* Global Reset and Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-brand-bg);
+    color: #ffffff;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Custom Modern Scrollbar layout */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-brand-bg);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #111d43;
+    border-radius: 5px;
+    border: 2px solid var(--color-brand-bg);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-brand-neon-blue);
+  }
+
+  /* Selection styling */
+  ::selection {
+    background-color: var(--color-brand-neon-blue);
+    color: var(--color-brand-bg);
+  }
+}
+
+/* Reusable Animation Classes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@utility animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@utility animate-float {
+  animation: float 6s ease-in-out infinite;
+}
