@@ -1,6 +1,6 @@
 
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
 
 @theme {
   /* Exact color matching from your cyberpunk design image */
@@ -47,8 +47,8 @@
   body {
     background-color: var(--color-brand-bg);
     color: #ffffff;
-    font-family: var(--font-sans);
-    -webkit-font-smoothing: antialiased;
+
+    -webkit-font-smoothing: antialiased;    font-family: var(--font-sans);
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
   }
