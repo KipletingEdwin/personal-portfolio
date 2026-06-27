@@ -1,4 +1,8 @@
 
+//  <FaHtml5 className='h-10 w-10 text-brand-coral '/>  text-brand-coral"
+        // <SiJavascript className='h-10 w-10'/>  text-[#f7df1e]"
+                // <RiTailwindCssFill className='h-10 w-10'/>  text-[#06b6d4]"
+
 
 import React, { useState } from 'react';
 
