@@ -67,16 +67,16 @@ export default function Contact() {
                   Email Address
                 </h4>
                 <a
-                  href="mailto:contact@mstm.studio"
+                  href="mailto:kipletingedwin4@gmail.com"
                   className="mt-1 block text-sm font-light text-slate-400 hover:text-brand-neon-blue transition-colors duration-200"
                 >
-                  contact@mstm.studio
+                  kipletingedwin4@gmail.com
                 </a>
               </div>
             </div>
 
             {/* Metadata Detail Anchor Card 2: Phone */}
-            <div className="flex items-start gap-4 rounded-xl border border-white/5 bg-brand-card/40 p-5 bg-card-glow shadow-md">
+            {/* <div className="flex items-start gap-4 rounded-xl border border-white/5 bg-brand-card/40 p-5 bg-card-glow shadow-md">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-bg border border-white/5 text-brand-coral">
                 <Phone className="h-5 w-5" />
               </div>
@@ -91,7 +91,7 @@ export default function Contact() {
                   +1 (234) 567-890
                 </a>
               </div>
-            </div>
+            </div> */}
 
             {/* Metadata Detail Anchor Card 3: Location */}
             <div className="flex items-start gap-4 rounded-xl border border-white/5 bg-brand-card/40 p-5 bg-card-glow shadow-md">

@@ -51,7 +51,7 @@ export default function Footer() {
           <div className="flex items-center gap-5">
             {/* LinkedIn Anchor */}
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/kipleting-edwin/"
               target="_blank"
               rel="noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/5 bg-brand-card text-slate-400 transition-all duration-300 hover:-translate-y-1 hover:border-brand-neon-blue/30 hover:text-brand-neon-blue hover:shadow-[0_0_15px_rgba(0,210,255,0.2)]"
@@ -62,7 +62,7 @@ export default function Footer() {
 
             {/* GitHub Anchor */}
             <a
-              href="https://github.com"
+              href="https://github.com/KipletingEdwin"
               target="_blank"
               rel="noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/5 bg-brand-card text-slate-400 transition-all duration-300 hover:-translate-y-1 hover:border-brand-coral/30 hover:text-brand-coral hover:shadow-[0_0_15px_rgba(255,65,85,0.2)]"
