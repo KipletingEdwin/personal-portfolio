@@ -13,7 +13,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-ink-900">
       <Navbar />
-      <main>
+      {/* <main>
         <Hero />
         <About />
         <Skills />
@@ -22,7 +22,7 @@ export default function App() {
         <Testimonials />
         <Contact />
       </main>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
