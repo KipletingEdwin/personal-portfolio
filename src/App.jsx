@@ -13,16 +13,16 @@ export default function App() {
   return (
     <div className="min-h-screen bg-ink-900">
       <Navbar />
-      {/* <main>
+      <main>
         <Hero />
-        <About />
+        {/* <About />
         <Skills />
         <Services />
         <Projects />
         <Testimonials />
-        <Contact />
+        <Contact /> */}
       </main>
-      <Footer /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
