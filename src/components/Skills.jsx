@@ -14,20 +14,21 @@ const Skills = () => {
           </p>
         </div>
 
-        <div >
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill) => {
             const Icon = Icons[skill.icon];
             return (
               <div
               key={skill.title}
+              className="card-surface rounded-2xl p-8 text-center transition-colors hover:border-cyan-accent/40  "
               >
-                <div>
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-cyan-accent/30 bg-cyan-accent/10 text-cyan-accent ">
                   <Icon size={26} />
                 </div>
-                <h3>
+                <h3 className="mt-5 font-display text-lg font-semibold text-white">
                   {skill.title}
                 </h3>
-                <p>
+                <p className="mt-2 text-sm text-mist-400">
                   {skill.description}
                 </p>
               </div>
