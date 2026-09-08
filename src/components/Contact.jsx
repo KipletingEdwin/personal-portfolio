@@ -13,7 +13,14 @@ const Contact = () => {
 
 
   return (
-    <div>Contact</div>
+    <section>
+      <div>
+        <div>
+          <h2>Contact Us</h2>
+          <p> Have a project in mind? Let's connect and discuss how I can help bring your ideas to life. </p>
+        </div>
+      </div>
+    </section>
   )
 }
 
