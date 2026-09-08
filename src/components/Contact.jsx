@@ -33,12 +33,33 @@ const Contact = () => {
           <form>
             <div>
               
+
             </div>
           </form>
         </div>
       </div>
     </section>
   )
+}
+
+function Field({ label, name, value, onChange, placeholder, type = "text" }) {
+  return (
+    <div>
+      <label htmlFor={name}  >
+        {label}
+      </label>
+      <input 
+      id={name}
+      name={name}
+      type={type}
+      value={value}
+      onChange={onChange}
+      placeholder={placeholder}
+      className='w-full'
+      />
+    </div>
+  )
+
 }
 
 export default Contact
