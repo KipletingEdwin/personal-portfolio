@@ -55,7 +55,7 @@ function Field({ label, name, value, onChange, placeholder, type = "text" }) {
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className='w-full'
+      className='w-full rounded-xl border-white/10 bg-ink-900 px-4 py-2.5 text-sm text-white placeholder:text-mist-400 outline-none focus:border-cyan-accent'
       />
     </div>
   )
