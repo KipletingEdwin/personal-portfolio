@@ -10,7 +10,16 @@ const Contact = () => {
     company: "",
     message: "",
   });
-  const [sent, setSent] = useState(false);
+const [sent, setSent] = useState(false);
+
+const handleChange = (e) => {
+  setForm((f) => ({ ...form, [e.target.name]:e.target.value}));
+};
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  setSent(true);
+};
 
 
   return (
@@ -32,8 +41,7 @@ const Contact = () => {
           </div>
           <form>
             <div>
-              
-
+              <Field label="Name" name="name" value={form.name} onChange={handleChange} />
             </div>
           </form>
         </div>
