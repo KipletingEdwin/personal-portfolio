@@ -1,5 +1,5 @@
 
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import React, { useState } from 'react'
 
 const Contact = () => {
@@ -44,6 +44,20 @@ const handleSubmit = (e) => {
               <Field label="Name" name="name" value={form.name} onChange={handleChange} placeholder="Edwin Kipleting"/>
               <Field label="Email" name="email" type='email' value={form.email} onChange={handleChange} placeholder="example@gmail.com" />
             </div>
+            <div className='grid gap-4 sm:grid-cols-2'>
+              <Field label="Phone" name="phone" value={form.phone} onChange={handleChange} placeholder="(123) 456 - 789"/> 
+              <Field label="Company" name="company" value={form.company} onChange={handleChange} placeholder="Family"/> 
+            </div>
+            <div>
+              <label> Message </label>
+              <textarea name='message' rows={4} value={form.message} onChange={handleChange} placeholder='Please type your message here...' />
+            </div>
+            <button
+            type='submit'
+            >
+              {sent ? "Message sent" : "Send Message"}
+              <Send size={16} />
+            </button>
           </form>
         </div>
       </div>
