@@ -41,7 +41,8 @@ const handleSubmit = (e) => {
           </div>
           <form>
             <div>
-              <Field label="Name" name="name" value={form.name} onChange={handleChange} />
+              <Field label="Name" name="name" value={form.name} onChange={handleChange} placeholder="Edwin Kipleting"/>
+              <Field label="Email" name="email" type='email' value={form.email} onChange={handleChange} placeholder="example@gmail.com" />
             </div>
           </form>
         </div>

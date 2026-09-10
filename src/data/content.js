@@ -103,21 +103,21 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Sajid handled both frontend and backend tasks smoothly and always ensured the codebase stayed clean, structured, and easy to maintain. He identified performance bottlenecks early, proposed solid solutions, and implemented them without disrupting the workflow.",
+      "Edwin handled both frontend and backend tasks smoothly and always ensured the codebase stayed clean, structured, and easy to maintain. He identified performance bottlenecks early, proposed solid solutions, and implemented them without disrupting the workflow.",
     name: "Wambui Muli",
     date: "17/05/2023",
     rating: 5,
   },
   {
     quote:
-      "Working with Sajid was a great experience. He communicated clearly, delivered on time, and the final product matched exactly what we envisioned for the platform.",
+      "Working with Edwin was a great experience. He communicated clearly, delivered on time, and the final product matched exactly what we envisioned for the platform.",
     name: "David Chen",
     date: "02/03/2023",
     rating: 5,
   },
   {
     quote:
-      "Great attention to detail and a strong understanding of the MERN stack. Sajid turned our rough requirements into a polished, working application.",
+      "Great attention to detail and a strong understanding of the MERN stack. Edwin turned our rough requirements into a polished, working application.",
     name: "Amara Okafor",
     date: "19/01/2023",
     rating: 5,
