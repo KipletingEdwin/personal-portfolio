@@ -27,7 +27,7 @@ const handleSubmit = (e) => {
       <div className='mx-auto max-w-6xl'>
         <div className='mx-auto max-w-xl text-center'>
           <h2 className='font-display text-3xl font-semibold text-white md:text-4xl'>Contact Us</h2>
-          <p> Have a project in mind? Let's connect and discuss how I can help bring your ideas to life. </p>
+          <p className='mt-14 text-mist-300'>Have a project in mind? Let's connect and discuss how I can help bring your ideas to life. </p>
         </div>
         <div>
           <div>
