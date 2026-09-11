@@ -25,7 +25,7 @@ const handleSubmit = (e) => {
   return (
     <section id='contact' className='bg-ink-900 px-6 py-20 md:py-28'>
       <div className='mx-auto max-w-6xl'>
-        <div>
+        <div className='mx-auto max-w-xl text-center'>
           <h2>Contact Us</h2>
           <p> Have a project in mind? Let's connect and discuss how I can help bring your ideas to life. </p>
         </div>
