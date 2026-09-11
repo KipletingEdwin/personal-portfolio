@@ -29,10 +29,11 @@ const handleSubmit = (e) => {
           <h2 className='font-display text-3xl font-semibold text-white md:text-4xl'>Contact Us</h2>
           <p className='mt-14 text-mist-300'>Have a project in mind? Let's connect and discuss how I can help bring your ideas to life. </p>
         </div>
-        <div>
+
+        <div className='mt-14 grid gap-12 md:grid-cols-2' >
           <div>
-            <h3>Get in touch today</h3> 
-            <p> I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. </p>
+            <h3 className='font-display text-xl font-semibold text-white'>Get in touch today</h3> 
+            <p className='mt-3 text-sm text-mist-300'>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. </p>
             <ul>
               <li><Mail size={18}/>kipletingedwin4@gmail.com</li>
               <li><Phone size={18}/>+92 3000000</li>
