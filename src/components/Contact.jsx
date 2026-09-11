@@ -34,7 +34,7 @@ const handleSubmit = (e) => {
           <div>
             <h3 className='font-display text-xl font-semibold text-white'>Get in touch today</h3> 
             <p className='mt-3 text-sm text-mist-300'>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. </p>
-            <ul>
+            <ul className='mt-8 space-y-4 text-sm text-mist-300'>
               <li><Mail size={18}/>kipletingedwin4@gmail.com</li>
               <li><Phone size={18}/>+92 3000000</li>
               <li><MapPin size={18}/>London, UK</li>
