@@ -40,8 +40,8 @@ const handleSubmit = (e) => {
               <li className='flex items-center gap-3'><MapPin size={18} className='text-cyan-accent'/>London, UK</li>
             </ul>
           </div>
-          <form>
-            <div>
+          <form onSubmit={handleSubmit} className='card-surface space-y-4 rounded-2xl p-7'>
+            <div className='grid gap-4 sm:grid-cols-2'>
               <Field label="Name" name="name" value={form.name} onChange={handleChange} placeholder="Edwin Kipleting"/>
               <Field label="Email" name="email" type='email' value={form.email} onChange={handleChange} placeholder="example@gmail.com" />
             </div>
@@ -49,9 +49,9 @@ const handleSubmit = (e) => {
               <Field label="Phone" name="phone" value={form.phone} onChange={handleChange} placeholder="(123) 456 - 789"/> 
               <Field label="Company" name="company" value={form.company} onChange={handleChange} placeholder="Family"/> 
             </div>
-            <div>
-              <label> Message </label>
-              <textarea name='message' rows={4} value={form.message} onChange={handleChange} placeholder='Please type your message here...' />
+            <div className='grid gap-4 sm:grid-cols-2'>
+              <label className='mb-1.5 block text-xs font-medium text-mist-300'> Message </label>
+              <textarea name='message' rows={4} value={form.message} onChange={handleChange} placeholder='Please type your message here...' className='w-full rounded-xl border border-white/10 bg-ink-900 px-4 py-3 text-sm text-white placeholder:text-mist-400 outline-none focus:border-cyan-accent  '/>
             </div>
             <button
             type='submit'
