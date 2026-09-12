@@ -125,8 +125,8 @@ export const testimonials = [
 ];
 
 export const socialLinks = [
-  { icon: "Facebook", href: "#" },
-  { icon: "Twitter", href: "#" },
-  { icon: "Instagram", href: "#" },
-  { icon: "Linkedin", href: "#" },
+  { icon: "FaFacebook", href: "#" },
+  { icon: "FaTwitter", href: "#" },
+  { icon: "FaInstagram", href: "#" },
+  { icon: "FaLinkedin", href: "#" },
 ];
