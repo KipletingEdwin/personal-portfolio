@@ -85,9 +85,9 @@ export const services = [
 
 export const projects = [
   {
-    title: "MERN Todo App (2025)",
+    title: "AI Smart Task Optimizer",
     description: "A fully functional Todo application with authentication, CRUD operations, and a clean, responsive UI.",
-    tags: ["React", "Node.js", "Express.js", "MongoDB"],
+    tags: ["ReactJs", "Ruby on Rails", "Tailwind V4", "Lucide"],
     github: "#",
     demo: "#",
   },
@@ -125,8 +125,8 @@ export const testimonials = [
 ];
 
 export const socialLinks = [
-  { icon: "FaFacebook", href: "#" },
-  { icon: "FaTwitter", href: "#" },
   { icon: "FaInstagram", href: "#" },
-  { icon: "FaLinkedin", href: "#" },
+  { icon: "FaTwitter", href: "#" },
+  { icon: "FaGithub", href: "https://github.com/KipletingEdwin" },
+  { icon: "FaLinkedin", href: "https://www.linkedin.com/in/kipleting-edwin/" },
 ];
