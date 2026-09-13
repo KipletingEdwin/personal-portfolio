@@ -86,7 +86,7 @@ export const services = [
 export const projects = [
   {
     title: "AI Smart Task Optimizer",
-    description: "A fully functional Todo application with authentication, CRUD operations, and a clean, responsive UI.",
+    description: "An intelligent task optimization engine featuring dynamic AI-driven auto-scheduling algorithms on a Ruby on Rails backend, paired with a real-time responsive ReactJS interface styled with Tailwind V4.",
     tags: ["ReactJs", "Ruby on Rails", "Tailwind V4", "Lucide"],
     github: "#",
     demo: "#",
