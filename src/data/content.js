@@ -86,15 +86,15 @@ export const services = [
 export const projects = [
   {
     title: "AI Smart Task Optimizer",
-    description: "An intelligent task optimization engine featuring dynamic AI-driven auto-scheduling algorithms on a Ruby on Rails backend, paired with a real-time responsive ReactJS interface styled with Tailwind V4.",
-    tags: ["ReactJs", "Ruby on Rails", "Tailwind V4", "Lucide"],
+    description: "An AI-powered to-do app that turns a plain-English task into an ordered checklist of sub-steps with time estimates, using Groq's LLM API.",
+    tags: ["ReactJs", "TailwindCSS", "Ruby on Rails", "Groq API", "JWT Auth"],
     github: "#",
     demo: "#",
   },
   {
     title: "E-Commerce Demo (2025)",
     description: "A demo e-commerce platform featuring product listing, cart system, and checkout flow.",
-    tags: ["React", "Node.js", "Express.js", "MongoDB"],
+    tags: ["ReactJs", "Node.js", "Express.js", "MongoDB"],
     github: "#",
     demo: "#",
   },

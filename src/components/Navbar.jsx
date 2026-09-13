@@ -1,3 +1,4 @@
+
 import { Menu, Send, X } from "lucide-react"
 import { navLinks } from "../data/content"
 import { useState } from "react"
@@ -11,7 +12,7 @@ const Navbar = () => {
     <header className="top-0 -z-50 border-b border-white/5 bg-ink-950/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4   ">
         <a href="#home" className="font-display text-lg font-semibold">
-          <span className="text-gradient" >MERN</span> Stack Developer
+          <span className="text-gradient" >Edwin</span>
         </a>
         <nav className="hidden items-center gap-8 md:flex">
           {
