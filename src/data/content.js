@@ -9,36 +9,42 @@ export const navLinks = [
 
 export const skills = [
   {
+    icon: "Atom",
+    title: "React.js",
+    description: "Building fast, interactive, and component-based user interfaces with modern hooks and state management.",
+  },
+  {
     icon: "Wind",
-    title: "Tailwind CSS",
-    description: "Creating responsive, modern, and clean layouts quickly using utility-first styling.",
+    title: "Tailwind v4",
+    description: "Designing modern, utility-first, and highly performant layouts utilizing the latest CSS-first configuration engine.",
   },
   {
     icon: "FileCode2",
     title: "JavaScript",
-    description: "Writing efficient, modern, and optimized code for both frontend and backend logic.",
+    description: "Writing clean, efficient, and modern ECMAScript for building interactive web applications.",
   },
   {
-    icon: "Atom",
-    title: "React",
-    description: "Building fast, interactive, and component-based UIs with clean state management.",
+    icon: "ShieldAlert",
+    title: "TypeScript",
+    description: "Enhancing code reliability and maintainability with strict typing, robust interfaces, and compile-time error checking.",
   },
   {
-    icon: "Hexagon",
-    title: "Node.js",
-    description: "Developing scalable backend logic and high-performance server-side applications.",
+    icon: "Smartphone",
+    title: "Ionic Angular",
+    description: "Developing cross-platform mobile and web applications with native-like performance from a single codebase.",
   },
   {
-    icon: "Database",
-    title: "MongoDB",
-    description: "Managing NoSQL databases with flexible schemas for high-performance data storage.",
+    icon: "Gem",
+    title: "Ruby",
+    description: "Leveraging elegant, object-oriented scripting for clean syntax and expressive backend logic.",
   },
   {
-    icon: "FileCode",
-    title: "HTML",
-    description: "Creating clean, well-structured page layouts with semantic markup for better accessibility and SEO.",
+    icon: "Layers",
+    title: "Ruby on Rails",
+    description: "Architecting robust MVC web applications rapidly using scaffolding, conventions, and database migrations.",
   },
 ];
+
 
 export const services = [
   {

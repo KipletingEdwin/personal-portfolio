@@ -28,7 +28,7 @@ const Navbar = () => {
         </nav>
         <a
         href="#contact"
-        className="hidden md:inline-flex items-center gap-2 rounded-full bg-rose-accent px-5 py-2 text-sm font-medium text-white transition-transform hover:scale-105"
+        className="hidden md:inline-flex items-center gap-2 rounded-full btn-gradient px-5 py-2 text-sm font-medium text-white transition-transform hover:scale-105"
         >
           <Send size={14} /> Hire Me
         </a>
