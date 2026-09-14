@@ -49,10 +49,6 @@ const Contact = () => {
                 kipletingedwin4@gmail.com
               </li>
               <li className="flex items-center gap-3">
-                <Phone size={18} className="text-cyan-accent" />
-                +92 3000000
-              </li>
-              <li className="flex items-center gap-3">
                 <MapPin size={18} className="text-cyan-accent" />
                 London, UK
               </li>
