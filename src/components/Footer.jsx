@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="border-t border-rose-accent/30 bg-ink-950 px-6 pt-12 pb-6 ">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 md:flex-row">
         <p className="font-display text-lg text-white">
-          MERN Stack <span className="text-gradient" >Developer</span>
+          FullStack <span className="text-gradient" >Developer</span>
         </p>
 
         <nav className="flex flex-wrap justify-center gap-6">
