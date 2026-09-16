@@ -30,7 +30,7 @@ const Contact = () => {
           </h2>
           <p className="mt-14 text-mist-300">
             Have a project in mind? Let's connect and discuss how I can help
-            bring your ideas to life.{" "}
+            bring your ideas to life.
           </p>
         </div>
 
@@ -91,10 +91,9 @@ const Contact = () => {
                 placeholder="Facebook"
               />
             </div>
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div>
               <label className="mb-1.5 block text-xs font-medium text-mist-300">
-                {" "}
-                Message{" "}
+                Message
               </label>
               <textarea
                 name="message"
