@@ -104,7 +104,9 @@ const Contact = () => {
                 className="w-full rounded-xl border border-white/10 bg-ink-900 px-4 py-3 text-sm text-white placeholder:text-mist-400 outline-none focus:border-cyan-accent"
               />
             </div>
-            <button type="submit" className="flex w-full items-center justify-center gap-2 rounded-full tn-gradient px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.02]">
+            <button 
+            type="submit" 
+            className="flex w-full items-center justify-center gap-2 rounded-full btn-gradient px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.02]">
               {sent ? "Message sent" : "Send Message"}
               <Send size={16} />
             </button>
