@@ -1,6 +1,11 @@
 
 import { ArrowUpRight, Boxes, FileCode2, Settings, Share2 } from "lucide-react";
 import profile from "../assets/Profile.jpg";
+import { BsJavascript } from "react-icons/bs";
+import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
+import { FaHtml5, FaReact } from "react-icons/fa";
+import { IoLogoCss3, IoLogoIonic } from "react-icons/io";
+import { SiRuby, SiRubyonrails, SiTypescript } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -45,11 +50,18 @@ const Hero = () => {
               className="h-full w-full object-cover"
             />
           </div>
-          <FloatingIcon icon={Share2} className="left-2 top-8" />
-          <FloatingIcon icon={Settings} className="right-0 top-9" />
-          <FloatingIcon icon={Boxes} className="left-0 top-1/2" />
-          <FloatingIcon icon={FileCode2} className="left-6 bottom-2" />
-          <FloatingIcon icon={FileCode2} className="right-2 bottom-10" />
+          <FloatingIcon icon={RiJavascriptFill} className="left-2 top-8" />
+          <FloatingIcon icon={FaHtml5} className="right-1 top-9" />
+          <FloatingIcon icon={RiTailwindCssFill} className="left-0 top-1/2" />
+          <FloatingIcon icon={FaReact} className="left-8 bottom-2" />
+          <FloatingIcon icon={IoLogoIonic} className="right-2 bottom-10" />
+
+          <FloatingIcon icon={SiTypescript} className="right-0 top-1/2" />
+          <FloatingIcon icon={SiRuby} className="left-1/2 bottom-0" />
+          <FloatingIcon icon={SiRubyonrails} className="right-2 bottom-10" />
+          <FloatingIcon icon={IoLogoCss3} className="`" />
+
+
         </div>
       </div>
     </section>
