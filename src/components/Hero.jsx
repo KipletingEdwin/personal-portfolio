@@ -60,8 +60,6 @@ const Hero = () => {
           <FloatingIcon icon={SiRuby} className="left-1/2 bottom-0" />
           <FloatingIcon icon={SiRubyonrails} className="right-2 bottom-10" />
           <FloatingIcon icon={IoLogoCss3} className="`" />
-
-
         </div>
       </div>
     </section>
