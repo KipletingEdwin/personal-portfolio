@@ -23,7 +23,7 @@ const Hero = () => {
           </h1>
           <p className="mt-5 max-w-md text-mist-300">
             I build scalable full-stack applications using React, Angular,
-            TypeScript and Rails. I love clean code and fast UIs.{" "}
+            TypeScript and Rails. I love clean code and fast UIs.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
 
         <div className="relative mx-auto h-72 w-72 md:h-96 md:w-96">
-          <div className="absolute inset-0 rounded-full bg-linear-to-br from-cyan-accent/30 via-blue-accent/20 to-rose-accent/30 blur-2xl" />
+          <div className="absolute inset-0 rounded-full bg-linear-to-br from-cyan-accent/30 via-blue-accent/20 to-rose-accent/30 blur-2xl"/>
           <div className="relative h-full w-full overflow-hidden rounded-full border border-white/10 bg-ink-800">
             <img
               src={profile}
@@ -50,16 +50,16 @@ const Hero = () => {
               className="h-full w-full object-cover"
             />
           </div>
-          <FloatingIcon icon={RiJavascriptFill} className="left-2 top-8" />
+          <FloatingIcon icon={RiJavascriptFill} className="left-2 top-8"/>
           <FloatingIcon icon={FaHtml5} className="right-1 top-9" />
-          <FloatingIcon icon={RiTailwindCssFill} className="left-0 top-1/2" />
+          <FloatingIcon icon={RiTailwindCssFill} className="left-0 top-1/2"/>
           <FloatingIcon icon={FaReact} className="left-8 bottom-2" />
-          <FloatingIcon icon={IoLogoIonic} className="right-2 bottom-10" />
+          <FloatingIcon icon={IoLogoIonic} className="right-2 bottom-10"/>
 
-          <FloatingIcon icon={SiTypescript} className="right-0 top-1/2" />
+          <FloatingIcon icon={SiTypescript} className="right-0 top-1/2"/>
           <FloatingIcon icon={SiRuby} className="left-1/2 bottom-0" />
-          <FloatingIcon icon={SiRubyonrails} className="right-2 bottom-10" />
-          <FloatingIcon icon={IoLogoCss3} className="`" />
+          <FloatingIcon icon={SiRubyonrails} className="right-2 bottom-10"/>
+          <FloatingIcon icon={IoLogoCss3} className="`"/>
         </div>
       </div>
     </section>

@@ -1,8 +1,28 @@
 
-import { Mail, MapPin, Phone, Send } from "lucide-react";
-import React, { useState } from "react";
+import { Mail, MapPin, Send } from "lucide-react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  // const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_c8nr3fj", "YOUR_TEMPLATE_ID", form.current, {
+        publicKey: "YOUR_PUBLIC_KEY",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        },
+      );
+  };
+
   const [form, setForm] = useState({
     name: "",
     email: "",
