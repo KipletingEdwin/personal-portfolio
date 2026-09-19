@@ -4,14 +4,16 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  // const form = useRef();
+
+  const form = useRef();
+    const [sent, setSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_c8nr3fj", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
+      .sendForm("service_c8nr3fj", "template_5wg5k3m", form.current, {
+        publicKey: "4ujZMtpMTuQBs6Jtw",
       })
       .then(
         () => {
@@ -21,25 +23,26 @@ const Contact = () => {
           console.log("FAILED...", error.text);
         },
       );
+      setSent(true);
   };
 
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    company: "",
-    message: "",
-  });
-  const [sent, setSent] = useState(false);
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   phone: "",
+  //   company: "",
+  //   message: "",
+  // });
+
 
   const handleChange = (e) => {
-    setForm((f) => ({ ...form, [e.target.name]: e.target.value }));
+    console.log(() => ({ ...form, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSent(true);
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setSent(true);
+  // };
 
   return (
     <section id="contact" className="bg-ink-900 px-6 py-20 md:py-28">
@@ -75,7 +78,8 @@ const Contact = () => {
             </ul>
           </div>
           <form
-            onSubmit={handleSubmit}
+            onSubmit={sendEmail}
+            ref={form}
             className="card-surface space-y-4 rounded-2xl p-7"
           >
             <div className="grid gap-4 sm:grid-cols-2">
@@ -103,13 +107,13 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="(123) 456 - 789"
               />
-              <Field
+              {/* <Field
                 label="Company"
                 name="company"
                 value={form.company}
                 onChange={handleChange}
                 placeholder="Facebook"
-              />
+              /> */}
             </div>
             <div>
               <label className="mb-1.5 block text-xs font-medium text-mist-300">
