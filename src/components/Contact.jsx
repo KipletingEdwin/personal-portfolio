@@ -4,9 +4,8 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-
   const form = useRef();
-    const [sent, setSent] = useState(false);
+  const [sent, setSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,31 +17,19 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setSent(true);
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
         },
       );
-      setSent(true);
+
   };
-
-  // const [form, setForm] = useState({
-  //   name: "",
-  //   email: "",
-  //   phone: "",
-  //   company: "",
-  //   message: "",
-  // });
-
 
   const handleChange = (e) => {
     console.log(() => ({ ...form, [e.target.name]: e.target.value }));
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setSent(true);
-  // };
 
   return (
     <section id="contact" className="bg-ink-900 px-6 py-20 md:py-28">
@@ -130,6 +117,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
+              disabled={sent}
               className="flex w-full items-center justify-center gap-2 rounded-full btn-gradient px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.02]"
             >
               {sent ? "Message sent" : "Send Message"}
