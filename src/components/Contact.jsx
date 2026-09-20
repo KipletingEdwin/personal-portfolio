@@ -22,7 +22,6 @@ const Contact = () => {
           setSent(true);
           setIsSending(false);
           form.current.reset();
-          //Reset "Message sent" back to "Send Message" after 4 seconds
           setTimeout(() => setSent(false), 3000);
         },
         (error) => {
