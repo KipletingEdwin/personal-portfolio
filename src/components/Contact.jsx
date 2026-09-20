@@ -1,14 +1,16 @@
 
-import { Mail, MapPin, Send } from "lucide-react";
+import { Loader2, Mail, MapPin, Send } from "lucide-react";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
   const [sent, setSent] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     emailjs
       .sendForm("service_c8nr3fj", "template_5wg5k3m", form.current, {
@@ -18,13 +20,15 @@ const Contact = () => {
         () => {
           console.log("SUCCESS!");
           setSent(true);
+          setIsSending(false);
           form.current.reset();
+          //Reset "Message sent" back to "Send Message" after 4 seconds
+          setTimeout(() => setSent(false), 3000);
         },
         (error) => {
           console.log("FAILED...", error.text);
         },
       );
-
   };
 
   const handleChange = (e) => {
@@ -117,11 +121,22 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              disabled={sent}
+              disabled={isSending || sent}
               className="flex w-full items-center justify-center gap-2 rounded-full btn-gradient px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.02]"
             >
-              {sent ? "Message sent" : "Send Message"}
-              <Send size={16} />
+              {isSending ? (
+                <>
+                  <span>Sending...</span>
+                  <Loader2 size={16} className="animate-spin" />
+                </>
+              ) : sent ? (
+                "Message sent"
+              ) : (
+                <>
+                  <span>Send Message</span>
+                  <Send size={16} />
+                </>
+              )}
             </button>
           </form>
         </div>
