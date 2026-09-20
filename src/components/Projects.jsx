@@ -1,7 +1,21 @@
+
+import { motion } from "framer-motion";
 import { projects } from "../data/content";
-import profile from "../assets/Profile.jpg";
+// import profile from "../assets/Profile.jpg";
 import { FaGithub } from "react-icons/fa";
 import { ExternalLink } from "lucide-react";
+
+const container = {
+  hidden: {},
+  show: {
+    transition: { staggerChildren: 0.15 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
 
 const Projects = () => {
   return (
@@ -16,11 +30,17 @@ const Projects = () => {
             Here are some of the real-world projects I've built using the MERN stack.
           </p>
         </div>
-        <div className="mt-14 grid gap-8 md:grid-cols-2">
+        <motion.div 
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2  }}
+        className="mt-14 grid gap-8 md:grid-cols-2">
           {projects.map((project) => {
             return (
-              <article
+              <motion.article
               key={project.title}
+              variants={item}
               className="overflow-hidden rounded-2xl border border-rose-accent/30 bg-ink-800"
               >
                 <div className="flex h-52 items-center justify-center bg-linear-to-br from-blue-accent/30 via-link-800 to-rose-accent/20">
@@ -57,10 +77,10 @@ const Projects = () => {
                     </a>
                   </div>
                 </div>
-              </article>
+              </motion.article>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
