@@ -1,10 +1,26 @@
 
+import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { useState } from "react";
 import { testimonials } from "../data/content";
 
+const variants = {
+  enter: (direction) => ({
+    x: direction > 0 ? 60 : -60,
+    opacity: 0,
+  }),
+  center: {
+    x: 0,
+    opacity: 1,
+  },
+  exit: (direction) => ({
+    x: direction > 0 ? -60 : 60,
+    opacity: 0,
+  }),
+};
+
 const Testimonials = () => {
-  const [index, setIndex] = useState(0);
+  const [[index, direction], setIndex] = useState([0, 0]);
   const total = testimonials.length;
   const current = testimonials[index];
 
@@ -26,6 +42,7 @@ const Testimonials = () => {
           >
             <ChevronLeft size={18} />
           </button>
+          
           <div className="card-surface flex-1 rounded-b-2xl border-t-2 border-t-rose-accent p-8">
             <div className="flex justify-center gap-1 text-amber-400">
               {Array.from({ length: current.rating }).map((_, i) => (
