@@ -1,3 +1,4 @@
+
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Send, Sparkles, X } from "lucide-react";
 import { navLinks } from "../data/content";
