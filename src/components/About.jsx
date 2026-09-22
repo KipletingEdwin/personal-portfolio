@@ -1,6 +1,24 @@
 
+import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import profile from "../assets/Profile.jpg";
+
+const imageVariant = {
+  hidden: { opacity: 0, x: -40 },
+  show: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+const textContainer = {
+  hidden: {},
+  show: {
+    transition: { staggerChildren: 0.12 },
+  },
+};
+
+const textItem = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
 
 const About = () => {
   return (
