@@ -94,8 +94,8 @@ export const projects = [
     title: "AI Smart Task Optimizer",
     description: "An AI-powered to-do app that turns a plain-English task into an ordered checklist of sub-steps with time estimates, using Groq's LLM API.",
     tags: ["ReactJs", "TailwindCSS", "Ruby on Rails", "Groq API", "JWT Auth"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/KipletingEdwin/AI-Smart-Task-Optimizer",
+    demo: "https://ai-smart-task-optimizer.netlify.app/",
   },
   {
     title: "E-Commerce Demo (2025)",
