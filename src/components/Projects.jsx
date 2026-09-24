@@ -65,7 +65,7 @@ const Projects = () => {
                   <div className="mt-6 flex flex-wrap gap-3">
                     <a
                     href={project.href}
-                    className="inline-flex items-center gap-2 rounded-full  bg-ink-700 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-ink-600"
+                    className="inline-flex items-center gap-2 rounded-full cursor-pointer bg-ink-700 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-ink-600"
                     >
                       <FaGithub size={16} /> Github
                     </a>
