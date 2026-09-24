@@ -44,7 +44,7 @@ const Projects = () => {
               className="overflow-hidden rounded-2xl border border-rose-accent/30 bg-ink-800"
               >
                 <div className="flex h-52 items-center justify-center bg-linear-to-br from-blue-accent/30 via-link-800 to-rose-accent/20">
-                  <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=900&auto=format&fit=crop"
+                  <img src={project.image}
                   alt={`${project.title} preview`} 
                   className="h-full w-full object-cover opacity-90"
                   />
