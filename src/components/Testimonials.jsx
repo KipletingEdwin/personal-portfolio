@@ -31,9 +31,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section
-    id="testimonials"
-     className="bg-ink-950 px-6 py-20 md:py-28">
+    <section id="testimonials" className="bg-ink-950 px-6 py-20 md:py-28">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="font-display text-3xl font-semibold text-white md:text-4xl">
           Testimonials
@@ -48,24 +46,21 @@ const Testimonials = () => {
             aria-label="Previous testimonials"
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 bg-ink-800 text-mist-300 transition-colors hover:text-cyan-accent"
           >
-            <ChevronLeft size={18}/>
+            <ChevronLeft size={18} />
           </button>
 
           <div className="relative flex-1 overflow-hidden">
             <AnimatePresence mode="wait" custom={direction}>
-
-
-              <motion.div 
-              key={index}
-              custom={direction}
-              variants={variants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{duration: 0.35, ease: "easeInOut"}}
-              className="card-surface rounded-2xl border-t-2 border-t-rose-accent p-8">
-
-                
+              <motion.div
+                key={index}
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.35, ease: "easeInOut" }}
+                className="card-surface rounded-2xl border-t-2 border-t-rose-accent p-8"
+              >
                 <div className="flex justify-center gap-1 text-amber-400">
                   {Array.from({ length: current.rating }).map((_, i) => (
                     <Star

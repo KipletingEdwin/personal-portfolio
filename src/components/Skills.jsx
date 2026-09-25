@@ -17,9 +17,7 @@ const item = {
 
 const Skills = () => {
   return (
-    <section
-    id="skills"
-     className="bg-ink-900 px-6 py-20 md:py-28">
+    <section id="skills" className="bg-ink-900 px-6 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="font-display text-3xl font-semibold text-white md:text-4xl">

@@ -1,3 +1,4 @@
+
 import { AnimatePresence, motion } from "framer-motion";
 import { Check, Loader2, Mail, MapPin, Send } from "lucide-react";
 import { useRef, useState } from "react";
@@ -38,9 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <section 
-    id="contact" 
-    className="bg-ink-900 px-6 py-20 md:py-28">
+    <section id="contact" className="bg-ink-900 px-6 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="font-display text-3xl font-semibold text-white md:text-4xl">
@@ -110,16 +109,16 @@ const Contact = () => {
             >
               <AnimatePresence mode="wait" initial={false}>
                 {isSending ? (
-                    <motion.span
+                  <motion.span
                     key="sending"
-                    initial={{ opacity: 0, y: 6}}
+                    initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -6}}
-                    transition={{ duration: 0.2}}
+                    exit={{ opacity: 0, y: -6 }}
+                    transition={{ duration: 0.2 }}
                     className="flex items-center gap-2"
-                    >Sending... <Loader2 size={16} className="animate-spin" />
-                    
-                    </motion.span>
+                  >
+                    Sending... <Loader2 size={16} className="animate-spin" />
+                  </motion.span>
                 ) : sent ? (
                   <motion.span
                     key="sent"
@@ -129,19 +128,19 @@ const Contact = () => {
                     transition={{ duration: 0.2 }}
                     className="flex items-center gap-2"
                   >
-                     Message sent <Check size={16}/>
+                    Message sent <Check size={16} />
                   </motion.span>
                 ) : (
-                    <motion.span
+                  <motion.span
                     key="idle"
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}
                     transition={{ duration: 0.2 }}
                     className="flex items-center gap-2"
-                    >
-                      Send Message <Send size={16} />
-                      </motion.span>
+                  >
+                    Send Message <Send size={16} />
+                  </motion.span>
                 )}
               </AnimatePresence>
             </motion.button>
