@@ -1,5 +1,7 @@
+
 import { navLinks, socialLinks } from "../data/content";
 import * as Icons from "react-icons/fa";
+import { NavLink } from "react-router";
 
 const Footer = () => {
   return (
@@ -11,9 +13,9 @@ const Footer = () => {
 
         <nav className="flex flex-wrap justify-center gap-6">
           {navLinks.map((link) => (
-            <a 
-            key={link.href}
-            href={link.href}
+            <a
+            key={link.label}
+            href={link.to}
             className="text-sm text-mist-300 hover:text-white"
             >{link.label}</a>
           ))}
@@ -22,9 +24,9 @@ const Footer = () => {
           {socialLinks.map((social) => {
             const Icon = Icons[social.icon];
             return (
-              <a 
+              <a
               key={social.icon}
-              href={social.href}
+              href={social.to}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.icon}

@@ -10,13 +10,15 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-ink-950/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4   ">
-        <a href="#home" className="font-display text-lg font-semibold">
+        <a 
+        href="#" 
+        className="font-display text-lg font-semibold">
           <span className="text-gradient">Edwin</span>
         </a>
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link, i) => (
             <a
-              key={link.href}
+              key={link.label}
               href={link.href}
               className={`text-sm transition-colors hover:text-white ${i === 0 ? "text-cyan-accent" : "text-mist-300"}`}
             >
@@ -66,7 +68,7 @@ const Navbar = () => {
             <div className="flex flex-col gap-1 px-6 py-4">
               {navLinks.map((link) => (
                 <a
-                  key={link.href}
+                  key={link.label}
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className="py-2 text-sm text-mist-300 hover:text-white"
@@ -91,3 +93,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+

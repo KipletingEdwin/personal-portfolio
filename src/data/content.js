@@ -3,10 +3,12 @@ import taskOptimiserImg from '../assets/ai-smart-task-optimiser.png'
 
 
 export const navLinks = [
-  { label: "Home", href: "#home" },
+  { label: "Home", href: "#" },
   { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
   { label: "Services", href: "#services" },
   { label: "Projects", href: "#projects" },
+  { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
 
