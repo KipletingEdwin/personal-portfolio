@@ -1,4 +1,7 @@
 
+import taskOptimiserImg from '../assets/ai-smart-task-optimiser.png'
+
+
 export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
@@ -92,7 +95,7 @@ export const services = [
 export const projects = [
   {
     title: "AI Smart Task Optimizer",
-    image: "../../src/assets/ai-smart-task-optimiser.png",
+    image: taskOptimiserImg,
     description: "An AI-powered to-do app that turns a plain-English task into an ordered checklist of sub-steps with time estimates, using Groq's LLM API.",
     tags: ["ReactJs", "TailwindCSS", "Ruby on Rails", "Groq API", "JWT Auth"],
     github: "https://github.com/KipletingEdwin/AI-Smart-Task-Optimizer",
@@ -100,7 +103,7 @@ export const projects = [
   },
   {
     title: "E-Commerce Demo (2025)",
-    image: "../../src/assets/ai-smart-task-optimiser.png",
+    image: taskOptimiserImg,
     description: "A demo e-commerce platform featuring product listing, cart system, and checkout flow.",
     tags: ["ReactJs", "Node.js", "Express.js", "MongoDB"],
     github: "#",
