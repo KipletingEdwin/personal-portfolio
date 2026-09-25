@@ -1,31 +1,60 @@
-
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Send, Sparkles, X } from "lucide-react";
 import { navLinks } from "../data/content";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [activeHash, setActiveHash] = useState(navLinks[0]?.href ?? "");
+
+useEffect(() => {
+  const sections = navLinks
+    .map((link) => link.href)
+    .filter((href) => href.length > 1) // skip "#" (Home/top of page)
+    .map((href) => document.querySelector(href))
+    .filter(Boolean);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visible) {
+        setActiveHash(`#${visible.target.id}`);
+      }
+    },
+    { rootMargin: "-40% 0px -55% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] }
+  );
+  
+
+  sections.forEach((section) => observer.observe(section));
+  return () => observer.disconnect();
+
+  
+}, []);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-ink-950/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4   ">
-        <a 
-        href="#" 
-        className="font-display text-lg font-semibold">
+        <a href="#" className="font-display text-lg font-semibold">
           <span className="text-gradient">Edwin</span>
         </a>
+
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link, i) => (
             <a
               key={link.label}
               href={link.href}
-              className={`text-sm transition-colors hover:text-white ${i === 0 ? "text-cyan-accent" : "text-mist-300"}`}
+              className={`text-sm transition-colors hover:text-white ${
+                activeHash === link.href ? "text-cyan-accent" : "text-mist-300"
+              }`}
             >
               {link.label}
             </a>
           ))}
         </nav>
+
         <motion.a
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
@@ -93,6 +122,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
