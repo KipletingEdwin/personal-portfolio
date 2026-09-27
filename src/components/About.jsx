@@ -69,7 +69,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             href="#"
-            className="mt-8 inline-flex items-center gap-2 rounded-full btn-gradient px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-105"
+            className="mt-8 inline-flex items-center gap-2 rounded-full btn-gradient px-6 py-3 text-sm font-medium text-white"
           >
             Download Resume <Download size={16} />
           </motion.a>
