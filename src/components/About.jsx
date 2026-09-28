@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import profile from "../assets/Profile.jpg";
 
 const imageVariant = {
@@ -68,10 +68,10 @@ const About = () => {
             variants={textItem}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            href="#"
+            href="#contact"
             className="mt-8 inline-flex items-center gap-2 rounded-full btn-gradient px-6 py-3 text-sm font-medium text-white"
           >
-            Download Resume <Download size={16} />
+            Let's Talk <ArrowRight size={16} />
           </motion.a>
         </motion.div>
       </div>
