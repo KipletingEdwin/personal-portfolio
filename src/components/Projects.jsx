@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { projects } from "../data/content";
 // import profile from "../assets/Profile.jpg";
@@ -72,13 +71,17 @@ const Projects = () => {
 
                   <div className="mt-6 flex flex-wrap gap-3">
                     <a
-                      href={project.href}
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 rounded-full cursor-pointer bg-ink-700 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-ink-600"
                     >
                       <FaGithub size={16} /> Github
                     </a>
                     <a
                       href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 rounded-full btn-gradient px-5 py-2 text-sm font-medium text-white transition-transform hover:scale-105"
                     >
                       Live Demo <ExternalLink size={16} />
